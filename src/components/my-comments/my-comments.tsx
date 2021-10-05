@@ -37,7 +37,8 @@ export class MyComments {
   @State() newCommentValue: string;
 
   /**
-   * Supabase client to be initialized with `supabaseUrl` and `supabaseKey`
+   * Supabase client to be initialized with `supabaseUrl` and `supabaseKey`.
+   * We will import this type when we install Supabase.
    */
   private supabase: SupabaseClient;
 
@@ -78,7 +79,7 @@ export class MyComments {
       .insert([
         {
           content: this.newCommentValue,
-          author: 'Author Name', // TODO: Add auth
+          author_id: 'test-author-1', // TODO: Add auth
           location_id: this.element.id
           // Supabase will automatically generate `id` and `created_at`
         }
