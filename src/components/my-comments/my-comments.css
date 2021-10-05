@@ -1,0 +1,37 @@
+:host {
+  display: block;
+  font-family: sans-serif;
+}
+
+article[role="comment"] {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 2px solid black;
+  border-radius: .5rem;
+  box-shadow: black 5px 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form textarea {
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid lightgray;
+  resize: vertical;
+  padding: .5rem;
+  box-sizing: border-box;
+}
+
+form input[type="submit"] {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-align: start;
+  max-width: min-content;
+  margin-top: .5rem;
+  padding: .5rem;
+}
